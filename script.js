@@ -2,7 +2,7 @@ const quotes = [
     {
         quote:
             "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
-        author: " Life"
+        author: "Life"
     },
     {
         quote:
@@ -29,3 +29,19 @@ const quotes = [
         author: " Tyne Daly"
     }
 ];
+
+function changeQuote(){
+
+    let randomQuotes = quotes[Math.floor(Math.random() * quotes.length)];
+
+    //Quote
+    let printQuote = document.querySelector(".quote--text");
+    printQuote.textContent = randomQuotes.quote;
+    
+    //Author
+    let printAuthor = document.querySelector(".quote--author");
+    printAuthor.textContent = randomQuotes.author;
+
+    console.log(randomQuotes.quote);
+}
+
