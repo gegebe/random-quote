@@ -45,3 +45,5 @@ function changeQuote(){
     console.log(randomQuotes.quote);
 }
 
+let button = document.querySelector("#generate-quote");
+button.addEventListener("click", changeQuote);
